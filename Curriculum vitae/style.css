@@ -1,0 +1,495 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.print-area {
+    width: 80%;
+    margin: 20px auto; 
+}
+
+.print-area .header {
+    width: 100%;
+    height: 150px;
+    background-color: #0B5345;
+    display: flex;
+    align-items: center;
+    position: relative;   
+}
+
+.header img {
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    border: cornsilk solid;
+    box-shadow: lightgray 2px 2px 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+
+.header img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: lightgray 2px 2px 8px;
+}
+
+.header-text {
+    color: white;
+    width: 60%;
+    margin-left: auto;
+    line-height: 0.3;
+}
+
+.header-text h1 {
+    font-size: 50px;
+}
+
+.header-text p {
+    font-size: 20px;
+    color: rgb(187, 184, 184);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-area {
+    width: 27%;
+    background-color: rgb(187, 184, 184);
+    text-align: center;
+    line-height: 0.3;
+    padding: 0.3px;
+}
+
+.left-area .contact {
+    margin-top: 140px;
+}
+.contact h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0;
+    
+}
+
+.contact h4 {
+    font-size: 17px;
+    font-weight: bolder;
+    color:  #0B5345;
+}
+
+.contact p {
+    font-weight: normal;
+}
+
+.skills {
+    margin-top: 100px;
+}
+
+.skills h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------*/
+.bars {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 30px;
+}
+
+/*-----------------ARCGIS---------------*/
+.bar1 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar1 span::before {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+/*--------------------AUTOCAD---------------*/
+.bar2 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar2 span::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+/*-----------------GLOBALMAPPER-----------------*/
+.bar3 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar3 span::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+/*--------------------HTML/CSS----------------*/
+.bar4 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar4 span::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+/*---------------------PYTHON--------------------*/
+.bar5 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar5 span::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+/*-------------------MODELER SCANNER---------------*/
+.bar6 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar6 span::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+/*------------------PHOTOSHOP------------------*/
+.bar7 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar7 span::before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+/*------------------MICROSOFT OFFICE------------*/
+.bar8 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar8 span::before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+/*------------------------------------------------------------------*/
+.personal-skills h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.personal-bars {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 15px 10px;
+    padding: 0 30px;
+}
+
+/*-------------------------CREATIVIDAD--------------------------*/
+.bar9 span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.bar9 span::before {
+    position: absolute;
+    content: "";
+    width: 4%;
+    height: 375%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 180px;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+/*--------------------TRABAJO EN EQUIPO--------------------------*/
+.bar10 span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.bar10 span::before {
+    position: absolute;
+    content: "";
+    width: 4%;
+    height: 375%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 200px;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+/*------------------------LIDERAZGO-------------------------*/
+.bar11 span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.bar11 span::before {
+    position: absolute;
+    content: "";
+    width: 4%;
+    height: 375%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 180px;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+/*------------------------ORGANIZACION------------------------*/
+.bar12 span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.bar12 span::before {
+    position: absolute;
+    content: "";
+    width: 4%;
+    height: 375%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 230px;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+/*------------------------------------------------------------------*/
+
+.languages h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.languages-bars {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 30px;
+}
+
+/*-----------------ESPAÑOL---------------*/
+.bar13 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar13 span::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+/*-----------------INGLES---------------*/
+.bar14 span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(148, 146, 146);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar14 span::before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    background-color: #0B5345;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+/*------------------------------------------------------------------*/
+
+.right-area {
+    width: 72.9%;
+    background-color: rgb(233, 233, 233);
+    text-align: left;
+    line-height: 1.5;
+    padding: 0.3px;
+}
+
+.right-area h1 {
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #0B5345;
+}
+
+.right-area p {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: justify;
+}
+
+.right-area ul {
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: justify;
+}
+
+/*------------------------------------------------------------------*/
+
+button {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 1190px;
+    background-color: #0B5345;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(148, 146, 146);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    box-shadow: 0 0 20px rgb(148, 146, 146);
+}
